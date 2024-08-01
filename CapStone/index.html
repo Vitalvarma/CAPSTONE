@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 5px 5px 5px;
+            margin: 5px 5px 5px 5px;
+        }
+        .hero-section{
+            display: flex;
+            flex-direction: row;
+            max-height: 100vh;  
+        }
+        .left-container{
+            max-height: 100vh;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(rgb(240, 233, 233),rgb(100, 183, 204));
+            border-radius: 20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        }
+        .right-container{
+            max-width: 100%;
+            padding: 0px 0px 0px 19px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            overflow-y: scroll;
+        }
+        .sub-right{
+            width: auto;
+            height: 90%;
+            background-color: aquamarine;
+            border-radius: 20px;
+        }
+        #aboutme,#cv,#contact,#projects{
+            padding: 10px 10px 10px 10px;
+            margin-bottom: 20px;
+        }
+        #aboutme{
+            background: linear-gradient(gray,red);
+        }
+        #cv{
+            background: linear-gradient(rgb(111, 230, 111),rgb(42, 158, 211));
+            display: flex;
+            justify-content: space-around;
+        }
+        #contact{
+            background: linear-gradient(rgb(206, 130, 43),pink);
+            font-size: 30px;
+        }
+        #name,#E-mail,#message{
+            height: 30px;
+            width: 300px;
+            background: linear-gradient(rgb(216, 212, 208),pink);
+
+        }
+        .button{
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(rgb(206, 130, 43),pink);
+        }
+        #projects{
+            width: auto;
+            height: 200%;
+            background: radial-gradient(white,rgb(159, 223, 159));
+        }
+        .list li a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="left-container">
+            <img src="photo.webp" alt="ProfilePhoto" height="60%">
+            <nav>
+                <ul class="list">
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#cv">MY CV</a></li>
+                    <li><a href="#E-mail">CONTACT ME</a></li>
+                    <li><a href="#message">MY PROJECTS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-container">
+           <div class="sub-right" id="aboutme">
+              <h1>ABOUT ME</h1>
+              <h2>NAME: </h2><hr><p>CHINTALAPATI VITAL RAMANA VARMA</p>,<br>
+              <h2>HIGHEST GRADUATION: </h2><hr><p>INTERMEDIATE 2<sup>nd</sup> YEAR</p><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod iste dolore rem harum ut cumque non voluptas adipisci, repellendus debitis? Ratione earum, obcaecati quae ut iure exercitationem. Sapiente, aperiam!</p><br>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione porro assumenda unde quas neque, nemo sunt sit? Debitis error voluptatibus consectetur omnis itaque magnam necessitatibus deleniti dolore. Repellat, atque earum.</p><br>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit sint repellat fugit minima repellendus in illum, asperiores saepe non perspiciatis et architecto! Voluptatum debitis exercitationem eos! Itaque harum explicabo doloremque!</p><br>
+            </div>
+           <div class="sub-right" id="cv">
+             <div class="left-cv">
+              <h1>MY CV</h1>
+              <p><strong>Name:</strong> Ch Vital Ramana Varma</p>
+              <p><strong>Father Name:</strong> Ch Madhava Raju</p>
+              <p><strong>Address:</strong> House # D 231/2 Wasp colony kaluka</p>
+              <p><strong>Date of birth:</strong> 30<sup>th</sup> feb 2024</p>
+              <P><strong>Mobile No:</strong> 03313-56890</P>
+              <p><strong>E-mail:</strong><a> abcd@gamil.com</a></p>
+              <p><strong>Nationality:</strong> Indian</p>
+              <p><strong>Martital status:</strong> single</p>
+             </div>
+             <div clas="right-cv">
+              <h1>ACADEMICS</h1>
+              <table class="table" border=10>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Board</th>
+                    <th>year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>Intermidiate</td>
+                    <td>SSC</td>
+                    <td>2023</td>
+                    <td>98%</td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>Tenth</td>
+                        <td>SSC</td>
+                        <td>2021</td>
+                        <td>99%</td>
+                    </tr>
+                </tr>
+             </table>
+             </div>
+           </div>
+           <div class="sub-right" id="contact">
+             <h1>CONTACT ME</h1>
+             <form action="#">
+                
+                <label for="name">NAME: </label><br>
+                <input type="text" id="name" name="name" placeholder="Enter Your name" required><br>
+
+                <label for="E-mail">E-mail: </label><br>
+                <input type="eamil" id="E-mail" name="E-mail" placeholder="Enter Your Email-ID" required></input><br>
+
+                <label for="message">Information</label><br>
+                <input type="text" id="message" name="message" placeholder="Enter Your message for me" required><br>
+
+
+                <input type="submit" id="submit" class="button">
+                <input type="reset" id="reset" class="button">
+
+             </form>
+           </div>
+           <div class="sub-right" id="projects">
+            <p>PROJECTS WILL BE UPLOADED WITH IN SHORT TIME PERIOD</p>
+           </div>
+        </div>
+    </section>
+</body>
+</html>
